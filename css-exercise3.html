@@ -35,7 +35,7 @@
 				 color:#045198;
 				}
 
-			#details
+				#details
 				{
 				 margin-left:25%;
 				 margin-right:auto;
@@ -59,49 +59,51 @@
 					width:550px;
 					padding-top:10px;
 					padding-bottom:20px;
-					padding-left:30px;
+					padding-right:30px;
 										
 				}
 
-				#details div.box ul li input.textnpass
-				{
-					background:white;
-					border-color:solid #b9b9b9;
-					width:360px;
-					height:25px;
-
-				}
-	
+				
 				#details div.box ul
 				{
 					list-style-type:none;			
-					display:table;			
+								
 				}
 			
 				#details div.box ul li
 				{	
 					font-size:14px;
 					color:black;
-					display:table-row;
+					text-align:right;
+					margin-right:10px;	
+					padding-bottom:5px;			
 				}
 			
+				#details div.box ul li.gen
+				{
+					margin-right:230px;
+				}
+
+				#details div.box ul li.dob
+				{
+					margin-right:32px;
+				}
+
+				#details div.box ul li.sub
+				{ 
+					margin-right:242px;
+				}
+
 				#details div.box ul li span.cellinput
 				{
-					display:table-cell;
+					
 					padding:5px;
-					text-align:right;
+					
 				}
 				#details div.box ul li span.addresslable
 				{
-					display:table-cell;
 					padding:5px;
-					text-align:right;
 					vertical-align:top;
-				}
-				#details div.box ul li span.cellinput-left
-				{
-					display:table-cell;
-					padding:5px;
 				}
 
 				#details div.box ul li span.sex
@@ -120,7 +122,16 @@
 					color:#6f6f6f;
 				}
 			
-				 #details div.box ul li input.address
+				 #details div.box ul li input.textnpass
+				{
+					background:white;
+					border-color:solid #b9b9b9;
+					width:360px;
+					height:25px;
+					
+				}
+
+				#details div.box ul li input.address
 				{
 					background:white;
 					border-color:solid 1px #a10200;
@@ -178,9 +189,9 @@
 						<span class=cellinput>Password:</span>
 						<span class=cellinput><input class = "textnpass" type="password" name="pass"></span>  	
 
-					<li>
+					<li class="gen">
 						<span class=cellinput>Gender</span>
-						<span class=cellinput-left>
+						<span class=cellinput>
 							<input type ="radio" name = "radio1" value= "Male" checked>
 							<span class = "sex"> Male</span>
 							 &nbsp&nbsp
@@ -188,9 +199,9 @@
 							<span class = "sex"> Female</span>
 						</span>  	
 					
-					<li>
+					<li class="dob">
 						<span class=cellinput>Date of Birth</span>
-						<span class=cellinput-left>
+						<span class=cellinput>
 							<select class ="dob">
 					  		<option value="dd">	DD	</option>
 							<option value="02">	02	</option>
@@ -211,9 +222,9 @@
 						<span class=addresslable>Address</span>
 						<span class=cellinput><input class ="address"type="textarea" name ="address"s></span>
 
-					<li>
+					<li class="sub">
 						<span class=cellinput></span>
-						<span class=cellinput-left>
+						<span class=cellinput>
 							<input class ="submitdetail" type="submit" name="Submit Detail" value="Submit Detail">
 						</span>				
 				</ul>
