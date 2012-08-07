@@ -13,13 +13,13 @@
 			{
 				font-family:sans-serif;
 			}
-
-
+			
+			
 
 			#vinsol
-				{
+			{
 				border-bottom:solid 2px #db2927;
-				}
+			}
 
 			#vinsol div.text
 				{
@@ -37,78 +37,90 @@
 
 			#details
 				{
-				 margin-left:auto;
+				 margin-left:25%;
 				 margin-right:auto;
 				 width:50%;
+				
 				}
 
-			#details p
+				#details span.heading
 				{
 					top:90px;
 					font-size:18px;
 					color:#2c286d;
 				}
+			
 
-				#details form
-				{
+
+				#details div.box
+				{	
 					background:#ececec;
 					border:solid 1px #bcbcbc;
 					width:550px;
-					padding-top:20px;
+					padding-top:10px;
 					padding-bottom:20px;
 					padding-left:30px;
-					
+										
 				}
 
-				#details form table
-				{
-					font-size:14px;
-					color:black;
-				}
-
-				#details form table tr td
-				{
-					padding-left:20px;
-				}
-
-				#details form table tr td.lable
-				{
-					text-align:right;
-				}
-
-				#details form table tr td.addresslable
-				{
-					vertical-align:top;
-					text-align:right;
-				}
-
-
-				#details form table tr td input.textnpass
+				#details div.box ul li input.textnpass
 				{
 					background:white;
 					border-color:solid #b9b9b9;
 					width:360px;
 					height:25px;
-					
+
+				}
+	
+				#details div.box ul
+				{
+					list-style-type:none;			
+					display:table;			
+				}
+			
+				#details div.box ul li
+				{	
+					font-size:14px;
+					color:black;
+					display:table-row;
+				}
+			
+				#details div.box ul li span.cellinput
+				{
+					display:table-cell;
+					padding:5px;
+					text-align:right;
+				}
+				#details div.box ul li span.addresslable
+				{
+					display:table-cell;
+					padding:5px;
+					text-align:right;
+					vertical-align:top;
+				}
+				#details div.box ul li span.cellinput-left
+				{
+					display:table-cell;
+					padding:5px;
 				}
 
-				span.sex
+				#details div.box ul li span.sex
 				{
 					color:#6f6f6f;
 					font-size:13px;
 				}
+				
+				
 
-
-
-				#details form table tr td select.dob
-				{
+				 #details div.box ul li select.dob
+				{	
 					background:white;					
 					width:110px;
 					font-size:13px;
 					color:#6f6f6f;
 				}
 			
-				#details form table tr td input.address
+				 #details div.box ul li input.address
 				{
 					background:white;
 					border-color:solid 1px #a10200;
@@ -116,7 +128,7 @@
 					height:135px;
 				}
 
-				#details form table tr td input.submitdetail
+				 #details div.box ul li input.submitdetail
 				{
 					background:#dc2927;
 					border-color:solid 1px #a10200;
@@ -142,88 +154,72 @@
 		</div>
 
  		<div id = "details" >
-			<p>Please fill the form below</p>
+			<br/>
+			<span class="heading">Please fill the form below</span>
 			
-
-		<form>
-			<table>
-				<tr>
-					<td class="lable">First Name:</td>
-					<td ><input class = "textnpass" type="text" name="firstname"></td>     
-				</tr>		
 		
-				<tr>
-					<td class="lable">Last Name:</td>
-					<td><input class = "textnpass" type="text" name="lastname"></td>     
-				</tr>
+			<div class="box">
+			
+				
+				<ul>
+					<li>
+						<span class=cellinput>First Name:</span>
+						<span class=cellinput><input class = "textnpass" type="text" name="firstname"></span>  
 
-				<tr>
-					<td class="lable">Email Address:</td>
-					<td><input class = "textnpass" type="text" name="emailaddress"></td>     
-				</tr>
+					<li>	
+						<span class=cellinput>Last Name:</span>
+						<span class=cellinput><input class = "textnpass" type="text" name="lastname"></span>  
 
-				<tr>
-					<td class="lable">Password:</td>
-					<td> <input class = "textnpass" type="password" name="pass"></td>     
-				</tr>			
+					<li>
+						<span class=cellinput>Email Address:</span>
+						<span class=cellinput><input class = "textnpass" type="text"name="emailaddress"></span>	  
 
-				<tr>
-					<td class="lable">Gender</td>
-					<td>
-						<input type ="radio" name = "radio1" value= "Male" checked>
-						<span class = "sex"> Male</span>
-						 &nbsp&nbsp
-						<input type ="radio" name = "radio1" value= "Female">
-						<span class = "sex"> Female</span>
-					</td>
-			        </tr>
+					<li>
+						<span class=cellinput>Password:</span>
+						<span class=cellinput><input class = "textnpass" type="password" name="pass"></span>  	
 
-				<tr>
-					<td class ="lable"> Date of Birth</td>
-
-					<td>
-						<select class ="dob">
-				  		<option value="dd">	DD	</option>
-						<option value="02">	02	</option>
-				 		</select> 
-
-						<select class ="dob">
-				  		<option value="mm">	MM	</option>
-				 		<option value="10">	10	</option>
-						</select> 
-
-						<select class ="dob">
-				  		<option value="yy">	YY	</option>
-				 		<option value="89">	89	</option>
-						</select> 
+					<li>
+						<span class=cellinput>Gender</span>
+						<span class=cellinput-left>
+							<input type ="radio" name = "radio1" value= "Male" checked>
+							<span class = "sex"> Male</span>
+							 &nbsp&nbsp
+							<input type ="radio" name = "radio1" value= "Female">
+							<span class = "sex"> Female</span>
+						</span>  	
 					
-					</td>
+					<li>
+						<span class=cellinput>Date of Birth</span>
+						<span class=cellinput-left>
+							<select class ="dob">
+					  		<option value="dd">	DD	</option>
+							<option value="02">	02	</option>
+					 		</select> 
 
-				</tr>
+							<select class ="dob">
+					  		<option value="mm">	MM	</option>
+					 		<option value="10">	10	</option>
+							</select> 
 
-				<tr>
-					<td class ="addresslable">Address</td>
+							<select class ="dob">
+					  		<option value="yy">	YY	</option>
+					 		<option value="89">	89	</option>
+							</select>
+						</span>  				
 
-					<td>
-						<input class ="address"type="textarea" name ="address">
-					</td>
+					<li>
+						<span class=addresslable>Address</span>
+						<span class=cellinput><input class ="address"type="textarea" name ="address"s></span>
 
-				</tr>
-
-				<tr>
-
-					<td></td>
-
-					<td>
-						<input class ="submitdetail" type="submit" name="Submit Detail" value="Submit Detail">
-
-					</td>
-
-				</tr>
-
-
-			</table>
-		</form>
+					<li>
+						<span class=cellinput></span>
+						<span class=cellinput-left>
+							<input class ="submitdetail" type="submit" name="Submit Detail" value="Submit Detail">
+						</span>				
+				</ul>
+	
+			</div>
+		</div>
 
 
 	</body>
